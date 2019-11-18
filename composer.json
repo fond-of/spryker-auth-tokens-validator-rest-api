@@ -1,0 +1,32 @@
+{
+  "name": "fond-of-spryker/auth-validator-rest-api",
+  "type": "library",
+  "description": "FondOf auth validator rest api module",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.1"
+  },
+  "require-dev": {
+    "spryker/code-sniffer": "^0.12",
+    "codeception/codeception": "^2.4",
+    "phpro/grumphp": "^0.14",
+    "sebastian/phpcpd": "^4.0",
+    "php-coveralls/php-coveralls": "^2.1",
+    "fond-of-codeception/spryker": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "FondOfSpryker\\": "src/FondOfSpryker/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "FondOfSpryker\\": "tests/FondOfSpryker/"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+      "sort-packages": true
+    }
+  }
+}
