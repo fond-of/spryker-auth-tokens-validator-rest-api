@@ -1,7 +1,7 @@
 {
-  "name": "fond-of-spryker/auth-validator-rest-api",
+  "name": "fond-of-spryker/auth-tokens-validator-rest-api",
   "type": "library",
-  "description": "FondOf auth validator rest api module",
+  "description": "FondOf auth tokens validator rest api module",
   "license": "MIT",
   "require": {
     "php": ">=7.1"
