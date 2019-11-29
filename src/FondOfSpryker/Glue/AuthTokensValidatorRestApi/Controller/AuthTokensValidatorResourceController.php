@@ -18,8 +18,9 @@ class AuthTokensValidatorResourceController extends AbstractController
      *
      * @return \Spryker\Glue\GlueApplication\Rest\JsonApi\RestResponseInterface
      */
-    public function getAction(RestRequestInterface $restRequest): RestResponseInterface
-    {
+    public function postAction(
+        RestRequestInterface $restRequest
+    ): RestResponseInterface {
         return $this->getFactory()
             ->createAccessTokenValidatorProcessor()
             ->validate($restRequest);

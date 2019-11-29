@@ -22,7 +22,7 @@ class AuthTokensValidatorResourceRoutePlugin extends AbstractPlugin implements R
     public function configure(ResourceRouteCollectionInterface $resourceRouteCollection): ResourceRouteCollectionInterface
     {
         $resourceRouteCollection
-            ->addGet('get', false);
+            ->addPost('post', false);
 
         return $resourceRouteCollection;
     }
@@ -52,6 +52,7 @@ class AuthTokensValidatorResourceRoutePlugin extends AbstractPlugin implements R
     }
 
     /**
+     *
      * @return string
      */
     public function getParentResourceType(): string
